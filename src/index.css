@@ -14,26 +14,111 @@
 
 html {
   font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
 }
 
-h1 {
-  font-size: 32px;
+body {
+  padding: 20px;
 }
 
-button {
-  border-radius: 8px;
+.hero__title {
+  font-size: 42px;
+  color: var(--secondary);
+  line-height: 1.1;
+  margin-top: 1rem;
+}
+
+.hero__text {
+  margin-top: 1rem;
+  font-size: 20px;
+}
+
+.hero__btn {
+  color: var(--primary);
+  background-color: white;
+  height: 60px;
+  width: 100%;
+  margin-top: 1rem;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.25s;
+  border: 3px solid var(--primary);
+  font-size: 24px;
+}
+
+.hero__btn:hover {
+  border: 3px solid transparent;
+  background-color: var(--primary);
+  color: white;
+}
+
+.right {
+  width: 100%;
+}
+
+.hero__img {
+  width: 100%;
+  margin-top: 2rem;
+}
+
+.inputInfo {
+  margin-top: 3rem;
+}
+
+.inputInfo__title {
+  font-size: 24px;
+  color: var(--secondary);
+}
+
+.card {
+  padding: 2rem;
+  background-color: var(--secondary);
+  color: white;
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: column;
+  border-radius: 1rem;
+}
+
+.card__text {
+  font-size: 22px;
+  margin-top: .8rem;
+  font-weight: bold;
+}
+
+.card__input {
+  font-size: 22px;
+  padding: 12px 8px;
+  margin-top: .4rem;
+  border-radius: 6px;
   border: 1px solid transparent;
-  padding: 0.6em 1.2em;
-  font-size: 1em;
-  font-weight: 500;
-  background-color: transparent;
+}
+
+.inputInfo__btn {
+  background-color: var(--primary);
+  border: 1px solid transparent;
+  color: white;
+  font-weight: bold;
+  margin-top: 2rem;
+  font-size: 24px;
+  height: 60px;
+  width: 100%;
+  border-radius: 50px;
   cursor: pointer;
   transition: all 0.25s;
 }
-button:hover {
-  border-color: #646cff;
+
+.results {
+  margin-top: 3rem;
 }
-button:focus,
-button:focus-visible {
-  outline: 4px auto red;
+
+.results__title {
+  color: var(--secondary);
+}
+
+.card--yellow {
+  background-color: var(--third);
+  & .card__text {
+    color: var(--secondary);
+  }
 }
