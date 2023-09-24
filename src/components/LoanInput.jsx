@@ -8,9 +8,6 @@ export default function LoanInput({ amount, setAmount, months, setMonths, setRes
   function onSubmitForm(event) {
     event.preventDefault()
     setResults(true)
-    //To do: Calculations
-    setAmount("")
-    setMonths("")
   }
   return (
     <form className="inputInfo" onSubmit={onSubmitForm}>

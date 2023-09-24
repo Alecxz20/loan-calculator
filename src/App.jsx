@@ -18,7 +18,15 @@ function App() {
         setMonths={setMonths}
         setResults={setResults}
       />
-      {results ? <Results /> : false}
+      {results ? (
+        <Results
+          setResults={setResults}
+          amount={Number(amount)}
+          months={Number(months)}
+        />
+      ) : (
+        false
+      )}
     </>
   )
 }
