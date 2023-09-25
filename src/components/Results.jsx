@@ -1,10 +1,12 @@
-export default function Results({ amount, months, setResults }) {
+export default function Results({ amount, months, setResults, setAmount, setMonths }) {
   const monthlyFee = (amount * 0.14) / (1 - Math.pow(1 + 0.14, -months))
   function onReset() {
     setResults(false)
+    setMonths("")
+    setAmount("")
   }
   return (
-    <section className="results">
+    <section className="results" name="loanResults">
       <h2 className="results__title">Resumen de la financiación</h2>
       <div className="card card--yellow">
         <label className="card__text">Monto prestado</label>

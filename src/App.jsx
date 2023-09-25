@@ -2,6 +2,7 @@ import { useState } from 'react'
 import Hero from './components/Hero'
 import LoanInput from './components/LoanInput'
 import Results from './components/Results'
+import { Link } from 'react-scroll'
 
 function App() {
   const [amount, setAmount] = useState('')
@@ -10,7 +11,7 @@ function App() {
 
   return (
     <>
-      <Hero />
+      <Hero Link={Link}/>
       <LoanInput
         amount={amount}
         setAmount={setAmount}
@@ -23,6 +24,8 @@ function App() {
           setResults={setResults}
           amount={Number(amount)}
           months={Number(months)}
+          setAmount={setAmount}
+          setMonths={setMonths}
         />
       ) : (
         false

@@ -1,4 +1,12 @@
-export default function LoanInput({ amount, setAmount, months, setMonths, setResults }) {
+import { animateScroll } from "react-scroll"
+
+export default function LoanInput({
+  amount,
+  setAmount,
+  months,
+  setMonths,
+  setResults,
+}) {
   function onChangeAmount(event) {
     setAmount(event.target.value)
   }
@@ -8,9 +16,10 @@ export default function LoanInput({ amount, setAmount, months, setMonths, setRes
   function onSubmitForm(event) {
     event.preventDefault()
     setResults(true)
+    animateScroll.scrollToBottom()
   }
   return (
-    <form className="inputInfo" onSubmit={onSubmitForm}>
+    <form className="inputInfo" onSubmit={onSubmitForm} name="loanInput">
       <h2 className="inputInfo__title">Calculadora de cuotas del préstamo</h2>
       <div className="card">
         <label htmlFor="loanAmount" className="card__text">
@@ -31,7 +40,7 @@ export default function LoanInput({ amount, setAmount, months, setMonths, setRes
         <input type="text" className="card__input" value="14 %" disabled />
 
         <label htmlFor="months" className="card__text">
-          Duración del préstamo
+          Duración del préstamo / Meses
         </label>
         <input
           id="months"

@@ -1,6 +1,6 @@
 import heroImg from "../assets/loan-calculator.jpg"
 
-export default function Hero() {
+export default function Hero({Link}) {
   return (
     <section className="hero">
       <div className="left">
@@ -12,7 +12,9 @@ export default function Hero() {
           intereses con el tiempo. Usa esta calculadora para ver cómo esos pagos
           se desglosan durante el plazo de tu préstamo.
         </p>
-        <button className="hero__btn">Calcula tu préstamo</button>
+        <Link to="loanInput" spy={true} smooth={true} offset={50} duration={500}>
+          <button className="hero__btn">Calcula tu préstamo</button>
+        </Link>
       </div>
       <div className="right">
         <img src={heroImg} alt="desk with 2 laptops and a man writing on a paper" className="hero__img" />
