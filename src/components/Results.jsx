@@ -39,9 +39,6 @@ export default function Results({
           <button type="button" className="inputInfo__btn" onClick={onReset}>
             Reiniciar
           </button>
-          <a href="https://www.somos.com.ve/requisitos-y-condiciones/" className="inputInfo__btn inputInfo__btn-green">
-            Proceder
-          </a>
         </div>
       </div>
     </section>

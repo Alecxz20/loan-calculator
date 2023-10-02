@@ -113,10 +113,7 @@ body {
   border-radius: 50px;
   cursor: pointer;
   transition: all 0.25s;
-}
-
-.inputInfo__btn-green {
-  background-color: #61ce70;
+  font-family: 'Montserrat', sans-serif;
 }
 
 .results {
@@ -136,14 +133,6 @@ body {
 
 input:disabled {
   color: #000
-}
-
-a:link,
-a:visited {
-  text-decoration: none;
-  display: flex;
-  align-items: center;
-  justify-content: center;
 }
 
 .grayout {
