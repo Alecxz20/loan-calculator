@@ -37,7 +37,7 @@ export default function LoanInput({
         />
 
         <label className="card__text">% de interes mensual</label>
-        <input type="text" className="card__input" value="14 %" disabled />
+        <input type="text" className="card__input grayout" value="14%" disabled />
 
         <label htmlFor="months" className="card__text">
           Duración del préstamo / Meses

@@ -93,7 +93,12 @@ body {
   margin-top: .4rem;
   border-radius: 6px;
   border: 1px solid transparent;
-  background-color: rgb(0, 0, 0, 0.05);
+  background-color: #f9f9f9;
+}
+
+.inputInfo__btn-box {
+  display: flex;
+  gap: 1rem
 }
 
 .inputInfo__btn {
@@ -108,6 +113,10 @@ body {
   border-radius: 50px;
   cursor: pointer;
   transition: all 0.25s;
+}
+
+.inputInfo__btn-green {
+  background-color: #61ce70;
 }
 
 .results {
@@ -127,6 +136,18 @@ body {
 
 input:disabled {
   color: #000
+}
+
+a:link,
+a:visited {
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.grayout {
+  background-color: #d1d5db;
 }
 
 @media (min-width: 900px) {
