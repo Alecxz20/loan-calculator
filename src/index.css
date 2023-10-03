@@ -114,6 +114,7 @@ body {
   cursor: pointer;
   transition: all 0.25s;
   font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
 }
 
 .results {
@@ -137,6 +138,20 @@ input:disabled {
 
 .grayout {
   background-color: #d1d5db;
+}
+
+a:link,
+a:visited {
+  text-decoration: none;
+}
+
+.inputInfo__btn-green {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #61CE70;
+  font-size: 16px;
+  text-align: center;
 }
 
 @media (min-width: 900px) {
