@@ -40,7 +40,7 @@ export default function Results({
             Reiniciar
           </button>
           <a target="_blank" href="https://www.somos.com.ve/requisitos-y-condiciones/" className="inputInfo__btn inputInfo__btn-green">
-            Proceder
+            Solicita tu Préstamo
           </a>
         </div>
       </div>
