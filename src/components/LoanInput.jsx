@@ -77,7 +77,7 @@ export default function LoanInput({ amount, setAmount, months, setMonths }) {
           className="card__input grayout"
           value={monthlyPayment}
           disabled
-          style={{ color: '#61CE70', fontWeight: 'bold' }}
+          style={{ fontWeight: 'bold' }}
         />
 
         <p className="smallText">
